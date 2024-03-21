@@ -140,6 +140,12 @@
     "sourcePort" : "s2IqWnIvIUxAMtPCebULr$$nUwy3PBVVLZe2jXp30Unu",
     "target" : "7oMlPBe-zRBiJLbFi40_y$$_adnA48Bb7_WuTWHt6a9r",
     "targetPort" : "zbVLs-S1C1eTKe_Zo7TZ3$$9wQcHzIr2c9LeSJcQ5hyL"
+  }, {
+    "id" : "T11sXjH8Xpf26dRHj2tgi",
+    "source" : "6i68_Ck70rUcc8vAHy4Wo$$LRptfnBOIEnld9DK2nA7R",
+    "sourcePort" : "Ti9CYqzSmj38vlbS15SbV$$lIcajtRwwG7qTdTubfRPq",
+    "target" : "Z0KtesLt9RSKUEIPva00a$$pU29OorQO63KjLsT33bJm",
+    "targetPort" : "3CRpNXMOjVo1AmTxXJeVb$$NIUIZWWZ6zXI6rc6pqhmy"
   } ],
   "processes" : {
     "4yZB3DzOTFZ48202Vars1$$hw48TErumI37SwXF-rqLG" : {
@@ -390,6 +396,144 @@
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
+    },
+    "Z0KtesLt9RSKUEIPva00a$$pU29OorQO63KjLsT33bJm" : {
+      "id" : "Z0KtesLt9RSKUEIPva00a$$pU29OorQO63KjLsT33bJm",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : -180,
+        "y" : 220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3CRpNXMOjVo1AmTxXJeVb$$NIUIZWWZ6zXI6rc6pqhmy",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Category",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ProductID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Brand",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OrderID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Quantity",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Price",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Description",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gender",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
     },
     "6i68_Ck70rUcc8vAHy4Wo$$LRptfnBOIEnld9DK2nA7R" : {
       "id" : "6i68_Ck70rUcc8vAHy4Wo$$LRptfnBOIEnld9DK2nA7R",
@@ -1543,5 +1687,23 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.Z0KtesLt9RSKUEIPva00a$$pU29OorQO63KjLsT33bJm.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  } ]
 }
