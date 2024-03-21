@@ -1,0 +1,181 @@
+name: PL_CustSeg
+description: ''
+version: 0.0.1
+author: rucha@cloudaeon.net
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: plcustseg
+  parentArtefactID: ruchacloudaeonnetteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-03-21 06:23:47'
+pipelines:
+  pipelines/Customer_Segmentation:
+    name: Customer_Segmentation
+    description: created a pipeline for customer segment at MnS
+    author: rucha@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-03-21 06:23:47'
+    datasets:
+      inputs:
+      - datasets/Category_Description
+      - datasets/Customer_Data
+      - datasets/Product_Detail
+      - datasets/Product_Order_Data
+      outputs:
+      - datasets/average_basket_size
+      - datasets/frequency
+      - datasets/total_purchased
+      - datasets/unique_customers
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/Category_Description:
+    name: Category_Description
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 06:25:52'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 06:25:52'
+  datasets/Customer_Data:
+    name: Customer_Data
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 06:27:13'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 06:27:13'
+  datasets/Product_Order_Data:
+    name: Product_Order_Data
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 06:29:45'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 06:29:45'
+  datasets/Product_Detail:
+    name: Product_Detail
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 06:30:56'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 06:30:57'
+  datasets/total_purchased:
+    name: total_purchased
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 07:07:16'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 07:07:16'
+  datasets/frequency:
+    name: frequency
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 07:09:24'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 07:09:24'
+  datasets/average_basket_size:
+    name: average_basket_size
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 07:11:36'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 07:11:36'
+  datasets/unique_customers:
+    name: unique_customers
+    description: ''
+    author: rucha@cloudaeon.net
+    createdAt: '2024-03-21 07:15:15'
+    mode: batch
+    physicalDatasets:
+      fabric-rucha:
+        fabricId: 10236
+        datasetType: File
+        description: ''
+        author: rucha@cloudaeon.net
+        createdAt: '2024-03-21 07:15:15'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-03-21 06:23:47'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '12654':
+    projectUID: 12654
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.4
+    isDefault: true
+    author: null
+    createdAt: '2024-03-21 06:20:45'
+  '12655':
+    projectUID: 12655
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    version: 0.0.3
+    isDefault: true
+    author: null
+    createdAt: '2024-03-21 06:20:45'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

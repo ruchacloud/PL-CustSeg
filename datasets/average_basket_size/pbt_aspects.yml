@@ -1,0 +1,18 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: OrderID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: avg_basket_size
+    type: double
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
